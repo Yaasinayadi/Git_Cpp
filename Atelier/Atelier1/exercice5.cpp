@@ -40,7 +40,6 @@ int main()
     // for(int i=0; i<n; i++){
     //     cout << "array [" << i+1 << "] = ";
     //     cin >> arr[i];
-        
     // }
     
     remplir(arr, n);
