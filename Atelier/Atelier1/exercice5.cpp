@@ -50,7 +50,7 @@ int main()
     cout << maximum;
     cout << "\n------\n";
     inverser(arr, n);
-    afficher(arr,n);
+    
 
     free(arr);
     
