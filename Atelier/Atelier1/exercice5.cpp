@@ -22,14 +22,17 @@ int& trouverMax(int *arr, int n) {
     return *max ;
 }
 void inverser(int *arr, int n){
-    int temp;
     
-    for(int i=0; i<n/2;i++){
-        temp = arr[i]; // arr[0]
-        arr[i] = arr[n -(i+1)];// arr[0] = arr[3]
-        arr[n-(i +1)] = temp ;
-        
-    }
+    
+    // for(int i=0; i< n/ 2 ; i++){
+    //     // temp = arr[i]; // arr[0]
+    //     // arr[i] = arr[n -(i+1)];// arr[0] = arr[3]
+    //     // arr[n-(i +1)] = temp ;
+     
+    // }
+    for(int i =n -1; i>= 0;i--){
+        cout <<"array[" << i+1 <<"]= "<< *(arr + i) << endl;
+    }   
 }
 
 
@@ -55,7 +58,7 @@ int main()
     cout << maximum;
     cout << "\n------\n";
     inverser(arr, n);
-    afficher(arr,n);
+    
 
     free(arr);
     
